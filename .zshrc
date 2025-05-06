@@ -10,6 +10,7 @@ alias syncbranch="git pull && git submodule sync && git submodule update --init 
 alias syncsubmodules="git submodule sync && git submodule update --init --recursive"
 alias gpoh="git push origin HEAD"
 gri() { git rebase -i HEAD~${1:-2} } # "gri N" == "git rebase -i HEAD~N"
+alias gc-="git commit -m \"-\""
 
 alias ter="terraform"
 
